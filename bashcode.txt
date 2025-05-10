@@ -1,0 +1,16 @@
+hadoop fs -rm -r /user/hadoop/input/ (lệnh xoá)
+
+
+
+hdfs dfs -mkdir -p /user/hadoop/input
+
+hdfs dfs -put C:\hadoop\ShortestPath2\input.txt /user/hadoop/input/
+
+hadoop jar ShortestPath2-1.0-SNAPSHOT.jar /user/hadoop/input /user/hadoop/output
+
+
+
+hadoop fs -ls /user/hadoop/output/
+
+hadoop fs -cat /user/hadoop/output/part-00000
+hadoop fs -cat /user/hadoop4/output/part-00000
